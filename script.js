@@ -7,7 +7,7 @@ const stage  = document.getElementById('stage');
 const BUG_DEFS = [
   { label: 'Work Experience', color: '#000000', sectionId: 'work'     },
   { label: 'Projects',        color: '#000000', sectionId: 'projects'  },
-  { label: 'Academic Exp.',   color: '#000000', sectionId: 'academic'  },
+  { label: 'Academic Experience',   color: '#000000', sectionId: 'academic'  },
   { label: 'Skills',          color: '#000000', sectionId: 'skills'    },
   { label: 'Contact',         color: '#000000', sectionId: 'contact'   },
 ];
@@ -108,7 +108,7 @@ class Bug {
     /* Legs */
     const legYOffsets = [-0.28 * s, 0.02 * s, 0.30 * s];
     ctx.strokeStyle = hexRgba(this.color, 0.55);
-    ctx.lineWidth   = 0.9;
+    ctx.lineWidth   = 1.8;
     for (let i = 0; i < 3; i++) {
       const ly    = legYOffsets[i];
       const swing = Math.sin(this.legPhase + i) * 4;
@@ -311,3 +311,12 @@ window.addEventListener('resize', () => {
 resizeCanvas();
 initBugs();
 loop();
+
+/* ── SCROLL-TO-TOP SPIDER ───────────────────────────────────────── */
+
+const scrollBtn = document.getElementById('scroll-top');
+scrollBtn.addEventListener('click', () => stage.scrollIntoView({ behavior: 'smooth' }));
+
+new IntersectionObserver(([e]) => {
+  scrollBtn.classList.toggle('visible', !e.isIntersecting);
+}).observe(stage);
