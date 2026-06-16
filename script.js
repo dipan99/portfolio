@@ -227,8 +227,8 @@ function updateCounter() {
 
 function resizeCanvas() {
   const dpr = window.devicePixelRatio || 1;
-  W = stage.clientWidth;
-  H = stage.clientHeight;
+  W = window.innerWidth;
+  H = window.innerHeight;
   canvas.width  = W * dpr;
   canvas.height = H * dpr;
   canvas.style.width  = W + 'px';

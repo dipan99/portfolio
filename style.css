@@ -18,7 +18,10 @@
 html, body {
   height: 100%;
   overflow-x: hidden;
+  scrollbar-width: none;
 }
+
+::-webkit-scrollbar { display: none; }
 
 body {
   font-family: 'Space Grotesk', sans-serif;
@@ -616,15 +619,9 @@ html { scroll-behavior: smooth; }
 
 #scroll-top svg {
   display: block;
-  animation: spider-bob 2.4s ease-in-out infinite;
 }
 
 #scroll-top:hover { color: #dc2626; }
-
-@keyframes spider-bob {
-  0%, 100% { transform: translateY(0); }
-  50%       { transform: translateY(-8px); }
-}
 
 /* ── RESPONSIVE ──────────────────────────────────────── */
 @media (max-width: 768px) {
