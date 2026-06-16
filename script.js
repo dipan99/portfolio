@@ -312,6 +312,27 @@ resizeCanvas();
 initBugs();
 loop();
 
+/* ── MOBILE NAV ─────────────────────────────────────────────────── */
+
+const navToggle = document.getElementById('nav-toggle');
+const navMobile = document.getElementById('nav-mobile');
+
+navToggle.addEventListener('click', () => {
+  const open = navToggle.classList.toggle('open');
+  navToggle.setAttribute('aria-expanded', open);
+  navMobile.classList.toggle('open', open);
+  navMobile.setAttribute('aria-hidden', !open);
+});
+
+navMobile.querySelectorAll('.nav-mobile-link').forEach(link => {
+  link.addEventListener('click', () => {
+    navToggle.classList.remove('open');
+    navToggle.setAttribute('aria-expanded', false);
+    navMobile.classList.remove('open');
+    navMobile.setAttribute('aria-hidden', true);
+  });
+});
+
 /* ── SCROLL-TO-TOP SPIDER ───────────────────────────────────────── */
 
 const scrollBtn = document.getElementById('scroll-top');
