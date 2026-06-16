@@ -220,7 +220,7 @@ function updateCounter() {
     el.innerHTML = 'Good job! You killed all the bugs!';
     el.classList.add('all-dead');
   } else {
-    el.innerHTML = `You have <strong>${aliveCount}</strong> bug${aliveCount !== 1 ? 's' : ''} on screen &mdash; click each to swat them!`;
+    el.innerHTML = `There are <strong>${aliveCount}</strong> bug${aliveCount !== 1 ? 's' : ''} on this page &mdash; click each to swat them!`;
     el.classList.remove('all-dead');
   }
 }
