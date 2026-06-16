@@ -64,8 +64,9 @@ body {
 
 .nav-link {
   font-family: 'Space Grotesk', sans-serif;
-  font-size: 13px;
-  color: var(--text-mid);
+  font-size: 17px;
+  font-weight: 500;
+  color: var(--text-dark);
   text-decoration: none;
   transition: color 0.18s;
   cursor: pointer;
@@ -73,7 +74,7 @@ body {
   border: none;
   padding: 0;
 }
-.nav-link:hover { color: var(--navy); }
+.nav-link:hover { color: var(--blue); }
 
 .nav-resume-btn {
   background: var(--navy);
@@ -543,43 +544,44 @@ html { scroll-behavior: smooth; }
 .skills-grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 0.9rem;
+  gap: 1.2rem;
 }
 
 .skill-category {
   background: #f8fafd;
-  border: 1px solid rgba(3,105,161,0.10);
-  border-radius: 12px;
-  padding: 1rem 1.1rem;
+  border: 1px solid rgba(3,105,161,0.12);
+  border-radius: 14px;
+  padding: 1.4rem 1.6rem;
   transition: border-color 0.2s;
 }
-.skill-category:hover { border-color: rgba(3,105,161,0.25); }
+.skill-category:hover { border-color: rgba(3,105,161,0.30); }
 
 .skill-cat-label {
   font-family: 'JetBrains Mono', monospace;
-  font-size: 10px;
+  font-size: 13px;
+  font-weight: 600;
   text-transform: uppercase;
-  color: var(--blue);
-  opacity: 0.8;
-  margin-bottom: 0.55rem;
+  letter-spacing: 0.08em;
+  color: var(--text-dark);
+  margin-bottom: 1rem;
   display: block;
 }
 
 .skill-pills {
   display: flex;
   flex-wrap: wrap;
+  gap: 0.5rem;
 }
 
 .skill-pill {
   background: rgba(3,105,161,0.09);
   color: var(--blue);
-  border: 1px solid rgba(3,105,161,0.15);
-  font-size: 11px;
+  border: 1px solid rgba(3,105,161,0.22);
+  font-size: 14px;
   font-weight: 500;
-  padding: 2px 9px;
-  border-radius: 14px;
-  font-family: 'JetBrains Mono', monospace;
-  margin: 3px 3px 0 0;
+  padding: 5px 14px;
+  border-radius: 20px;
+  font-family: 'Space Grotesk', sans-serif;
   display: inline-block;
 }
 
@@ -623,6 +625,61 @@ html { scroll-behavior: smooth; }
 
 #scroll-top:hover { color: #dc2626; }
 
+/* ── CONTACT ROW ─────────────────────────────────────── */
+
+.contact-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.contact-card {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  background: #f8fafd;
+  border: 1px solid rgba(3,105,161,0.12);
+  border-radius: 14px;
+  padding: 1.1rem 1.6rem;
+  text-decoration: none;
+  color: var(--text-dark);
+  transition: border-color 0.2s, background 0.2s;
+  flex: 1 1 220px;
+}
+
+.contact-card:hover {
+  border-color: var(--blue);
+  background: rgba(3,105,161,0.04);
+  color: var(--blue);
+}
+
+.contact-card svg { flex-shrink: 0; color: var(--blue); }
+.contact-card:hover svg { color: var(--blue); }
+
+.contact-card-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.contact-label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--text-muted);
+}
+
+.contact-card:hover .contact-label { color: var(--blue); }
+
+.contact-link {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  color: inherit;
+}
+
 /* ── RESPONSIVE ──────────────────────────────────────── */
 @media (max-width: 768px) {
   .nav-links { display: none; }
@@ -648,6 +705,7 @@ html { scroll-behavior: smooth; }
   .cards-grid,
   .cards-grid--2col { grid-template-columns: 1fr; }
   .skills-grid { grid-template-columns: 1fr; }
+  .contact-row { flex-direction: column; }
 }
 
 @media (max-width: 480px) {
