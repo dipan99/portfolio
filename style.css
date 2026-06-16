@@ -680,37 +680,111 @@ html { scroll-behavior: smooth; }
   color: inherit;
 }
 
-/* ── RESPONSIVE ──────────────────────────────────────── */
-@media (max-width: 768px) {
-  .nav-links { display: none; }
+/* ── HAMBURGER / MOBILE NAV ──────────────────────────── */
+#nav-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 6px 4px;
+  margin-left: 0.75rem;
+}
+#nav-toggle span {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background: var(--text-dark);
+  border-radius: 2px;
+  transition: transform 0.22s, opacity 0.22s;
+}
+#nav-toggle.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+#nav-toggle.open span:nth-child(2) { opacity: 0; }
+#nav-toggle.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
 
-  .hero {
-    flex-direction: column;
-    padding: 5rem 2rem 3rem;
-    align-items: flex-start;
-    gap: 2rem;
-  }
+#nav-mobile {
+  display: none;
+  position: fixed;
+  top: 56px;
+  left: 0; right: 0;
+  background: rgba(240,242,247,0.97);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-bottom: 1px solid rgba(3,105,161,0.10);
+  z-index: 99;
+  flex-direction: column;
+}
+#nav-mobile.open { display: flex; }
 
-  .hero-right { align-self: center; }
-
-  .photo-card {
-    width: 260px;
-  }
-
+.nav-mobile-link {
+  padding: 0.9rem 1.75rem;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--text-dark);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(3,105,161,0.07);
+  transition: color 0.15s, background 0.15s;
+}
+.nav-mobile-link:last-child { border-bottom: none; }
+.nav-mobile-link:hover { color: var(--blue); background: rgba(3,105,161,0.04); }
+.nav-mobile-resume {
+  font-weight: 600;
+  color: var(--blue);
 }
 
+/* ── RESPONSIVE ──────────────────────────────────────── */
 @media (max-width: 768px) {
-  .content-section { padding: 3.5rem 2rem; }
+  /* Nav */
+  .nav-links { display: none; }
+  .nav-resume-btn { display: none; }
+  #nav-toggle { display: flex; }
+
+  /* Hide bug game on mobile — canvas trashes the layout */
+  #bug-canvas { display: none; }
+  #bug-counter { display: none; }
+
+  /* Hero */
+  .hero {
+    padding: 5rem 1.75rem 3rem;
+    min-height: unset;
+  }
+  .hero-inner {
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+  }
+  .hero-left { max-width: 100%; }
+  .hero-right { align-self: center; }
+  .photo-card { width: min(280px, 78vw); }
+
+  /* Scroll-to-top */
+  #scroll-top { right: 1.25rem; bottom: 1.5rem; }
+
+  /* Content */
+  .content-section { padding: 3.5rem 1.75rem; }
   .section-title { font-size: 2rem; }
   .cards-grid,
   .cards-grid--2col { grid-template-columns: 1fr; }
   .skills-grid { grid-template-columns: 1fr; }
   .contact-row { flex-direction: column; }
+
+  /* Card headers: stack date/location below role */
+  .pcard-header { flex-direction: column; gap: 0.4rem; }
+  .pcard-meta-right { align-items: flex-start; }
+
+  /* Smaller list items on mobile */
+  .pcard-list li { font-size: 15px; }
 }
 
 @media (max-width: 480px) {
-  .hero-name { font-size: clamp(2.8rem, 10vw, 3.8rem); }
-  .hero { padding: 5rem 1.5rem 3rem; }
+  .hero-name { font-size: clamp(2.6rem, 9vw, 3.6rem); }
+  .hero-bio { font-size: 17px; }
+  .hero { padding: 4.5rem 1.25rem 3rem; }
   #nav { padding: 0 1.25rem; }
-  .content-section { padding: 3rem 1.5rem; }
+  .content-section { padding: 3rem 1.25rem; }
+  .photo-card { width: min(240px, 85vw); }
+  .section-title { font-size: 1.75rem; }
 }
