@@ -1,0 +1,25 @@
+[
+  {
+    "role": "Graduate Research Assistant",
+    "company": "University of Minnesota",
+    "period": "Jan 2026 – May 2026",
+    "location": "Minneapolis, MN",
+    "bullets": [
+      "Designed and developed a Real-Time World Environment for vehicle teleoperation, converting GPS, camera, and LiDAR data into a structured, semantic world model transmitted to operators in real time.",
+      "Performed Python-based analysis on real-world sensor datasets, extracting statistics and validating system behavior under live conditions.",
+      "Integrated and synchronized multi-modal sensor streams (GPS, camera, LiDAR) under real-time networking constraints using a ROS-driven pipeline.",
+      "Collaborated with researchers to define system requirements and validation procedures for the teleoperation stack."
+    ]
+  },
+  {
+    "role": "Graduate Teaching Assistant",
+    "company": "University of Minnesota",
+    "period": "Jan 2025 – May 2025",
+    "location": "Minneapolis, MN",
+    "bullets": [
+      "Migrated course content from R to Python across two graduate-level courses — MSBA 6451: Prescriptive Analytics and IDSC 6051: Information Technologies and Solutions — ensuring code accuracy, consistency, efficiency, and alignment with current industry standards.",
+      "Graded assignments and provided detailed, constructive feedback to support student learning and comprehension.",
+      "Assisted students with technical and conceptual queries, helping them strengthen their understanding of prescriptive analytics and information systems."
+    ]
+  }
+]

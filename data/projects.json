@@ -1,0 +1,74 @@
+[
+  {
+    "badge": "On-Device AI · iOS/macOS · Hackathon",
+    "title": "Sirius — Private On-Device Health AI",
+    "description": "Won Best Security Infrastructure at the O1 Summit Hackathon ($1K). A fully private AI health assistant — LLM inference, speech recognition, health memory, and device sync all run locally on Apple Silicon. Built the macOS app end to end in SwiftUI with a FastAPI backend running Gemma 4 via MLX. P2P device sync over Bluetooth/Wi-Fi with AES-256-GCM encrypted health memory.",
+    "stack": "Swift, SwiftUI, Python, FastAPI, MLX, GRDB, NLEmbedding, PDFKit, SSE"
+  },
+  {
+    "badge": "AI · Data Analysis · Capstone",
+    "title": "StatViz — AI-Assisted Exploratory Data Analysis",
+    "description": "MSCS capstone (advised by Dr. Qianwen Wang). Browser-based tool guiding users from raw datasets to structured insights via a node-based canvas — no code required. OpenAI function-calling with intent classification; client-side stats engine (Pearson correlation, Welch's t-test, chi-square, ANOVA). Raw data never leaves the browser.",
+    "stack": "React, React Flow, Zustand, Vite, OpenAI API, jstat, GitHub Pages"
+  },
+  {
+    "badge": "Agentic AI · NLP · Journalism · Grant",
+    "title": "MinneDigest — AI-Powered Journalism Suite",
+    "description": "Won the AI × Journalism Hackathon ($10K grant, Hacks/Hackers). Production journalism suite with automated news ingestion, RAG-ready content store, PDF-to-news conversion, and AI fact-checking pipeline. Dual-persona podcast format where AI agents discuss news conversationally. Reduced content creation time by 85%.",
+    "stack": "LangGraph, LangChain, FastAPI, ElevenLabs, Whisper, Ollama, RAG"
+  },
+  {
+    "badge": "AI · Databases · LLM Routing",
+    "title": "ProdLens — Intelligent E-Commerce Query System",
+    "description": "Hybrid PostgreSQL + ChromaDB (HNSW) database; ~1ms latency across 1,024 products, 122 brands, 2,500+ reviews. 80% API cost reduction via batched LangChain ETL. LangGraph routing across Text-to-SQL, RAG with metadata filtering, and conversational flows; HuggingFace BERT sentiment analysis.",
+    "stack": "PostgreSQL, ChromaDB, LangGraph, OpenAI, HuggingFace BERT, Streamlit"
+  },
+  {
+    "badge": "Robotics · Real-Time · Computer Vision",
+    "title": "Real-Time World Model for Vehicle Teleoperation",
+    "description": "Vehicle-centric world model augmenting teleoperation by combining map structure, perception outputs, and spatial context into a unified 3D interface. Deep learning–based object detection + LiDAR localization transmit structured scene semantics instead of raw sensor data to a browser-based visualization.",
+    "stack": "Python, ROS 2, rosbridge, LiDAR, Object Detection, WebGL"
+  },
+  {
+    "badge": "Autonomous Vehicles · HUD · Real-Time",
+    "title": "Real-Time Situational-Awareness Alert System",
+    "description": "3D intersection awareness HUD visualizing real-time AV data streamed via ROS 2, showing detected positions and latency-compensated ghost projections. Dynamic map adaptation via OSM road geometries at runtime; coordinate calibration per data stream for accurate spatial rendering across intersections.",
+    "stack": "ROS 2, rosbridge, OSM, JavaScript, Python"
+  },
+  {
+    "badge": "Data Visualization · Geospatial",
+    "title": "The California Story — Wildfire Visualization",
+    "description": "Interactive web app analyzing the impact of environmental and social factors on California wildfires. Integrated GeoJSON with dynamic 3D maps, time-series charts, and interactive visualizations. Python data analysis for wildfire trend extraction.",
+    "stack": "SvelteJS, D3.js, Plotly.js, CesiumJS, Python, GeoJSON"
+  },
+  {
+    "badge": "Full-Stack Web · Auth",
+    "title": "CareerBridge — Resume Sharing Network",
+    "description": "Social networking app for sharing and discovering resumes. Three user roles (Employer, Job Seeker, Guest) with RBAC via Auth0; tag-based candidate search; resume commenting. Flask + SQLAlchemy backend, PureCSS frontend.",
+    "stack": "Flask, SQLAlchemy, Auth0, PureCSS, JavaScript, HTML/CSS"
+  },
+  {
+    "badge": "Full-Stack Web · Firebase",
+    "title": "BookBridge — Books Management Platform",
+    "description": "Full-stack app for managing personal and collaborative book collections. CRUD for books, note-taking, and book club / meeting management with real-time sync via Firebase.",
+    "stack": "EmberJS, Firebase (DB, Storage, Auth), JavaScript, Bootstrap"
+  },
+  {
+    "badge": "ML · Full-Stack · FinTech",
+    "title": "AI Enabled FinTech B2B Invoice Management Application",
+    "description": "Developed a hybrid Random Forest + Linear Regression model to predict invoice payment dates with improved accuracy, incorporating data preprocessing, feature engineering, and model evaluation pipelines in Python. Integrated the predictive model into a dynamic, responsive UI built with React for interactive visualization and real-time insights. Designed and implemented backend components in Java and Servlet with JDBC for secure data access, and connected to a relational DBMS for persistence. Delivered a full-stack solution that combined data science, machine learning, and web technologies to support automated decision-making in B2B financial workflows.",
+    "stack": "Python, React, Java, JavaScript, Servlet, JDBC, DBMS, HTML, CSS"
+  },
+  {
+    "badge": "Machine Learning · Data Science",
+    "title": "Customer Loan Risk Prediction",
+    "description": "Built a binary classification model to identify customers at risk of loan default, leveraging Python for data preprocessing, exploratory analysis, feature engineering, and model development. Evaluated multiple supervised learning algorithms to optimize prediction accuracy and interpretability. Delivered a data-driven solution to support risk assessment and decision-making in financial services.",
+    "stack": "Python (Data Analysis, Model Development)"
+  },
+  {
+    "badge": "C++ · OOP · Systems",
+    "title": "Drug Store Invoice Management",
+    "description": "Designed and implemented a C++ billing system for retail pharmacies, applying principles of object-oriented programming such as encapsulation, inheritance, and polymorphism. The system managed core operations including inventory tracking, customer billing, and receipt generation, demonstrating modular class design and reusable code structure.",
+    "stack": "C++, Object-Oriented Programming"
+  }
+]

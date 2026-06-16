@@ -1,0 +1,52 @@
+[
+  {
+    "role": "SDET Intern / Test Engineering Intern",
+    "company": "IDeaS Revenue Solutions",
+    "period": "May 2025 – Aug 2025",
+    "location": "Bloomington, MN",
+    "bullets": [
+      "Developed and executed end-to-end automated tests in Groovy using JUnit and Spring Boot to validate Integration Services workflows across data ingestion, transformation, synchronization, and backend service communication.",
+      "Designed and executed 30+ JIRA-tracked test cases in an Agile Scrum environment, covering negative, time-based, acceptance, performance, and regression scenarios. Authored test documentation to support traceability and team knowledge sharing.",
+      "Used Postman, Studio 3T, and Datadog to validate API responses, inspect MongoDB data, troubleshoot failures, analyze logs, and confirm backend workflow execution across Redis, MongoDB, and AWS-based services.",
+      "Built container-agnostic REST API endpoints in Java Spring Boot using Docker for local setup, enabling runtime connection switching between external client systems and internal services for manual QA and automated test pipelines.",
+      "Automated CI deployment and post-deploy validation workflows using GitHub Actions, reducing manual release verification effort."
+    ]
+  },
+  {
+    "role": "Software Development Engineer in Test",
+    "company": "Commvault Systems",
+    "period": "Jul 2022 – Jul 2024",
+    "location": "Bangalore, India",
+    "bullets": [
+      "Developed 25+ end-to-end automated tests in Python using Selenium and cloud SDKs to validate backup and recovery workflows across AWS, Azure, Oracle Cloud, VMware ESXi, and Microsoft Hyper-V environments.",
+      "Maintained and expanded the One-Touch disaster recovery automation suite by 150% across 6 release cycles, adding coverage for new features, updating tests for deprecated workflows, and improving regression reliability.",
+      "Designed and executed test plans across five major projects, covering acceptance, negative, regression, integration, and edge-case scenarios through both manual and automated testing. Authored technical test documentation to support release validation and team knowledge sharing.",
+      "Validated workflows across NAS, NFS, S3, iSCSI, and CIFS/SMB-based storage systems, building strong domain expertise in file systems, network storage protocols, enterprise data protection, and disaster recovery testing.",
+      "Debugged 70+ customer-reported issues in cross-functional collaboration with developers by reproducing failures, analyzing logs, validating backend behavior through SQL queries and Postman API testing, identifying root causes, and verifying fixes through regression testing.",
+      "Automated ISO generation for disaster recovery workflows using Python and Windows PowerShell scripts, improving repeatability and reducing manual effort."
+    ]
+  },
+  {
+    "role": "SDET Intern",
+    "company": "Commvault Systems",
+    "period": "Oct 2021 – Jun 2022",
+    "location": "Bangalore, India",
+    "bullets": [
+      "Developed and maintained a Python Test Automation framework, assisting with porting from an older framework to a newer one while adding and updating test cases for new features.",
+      "Created and executed detailed test plans to validate runs and ensure feature reliability, and debugged customer issues by identifying root causes across full-scale projects.",
+      "Worked mainly in the Bare Metal Recovery & File Systems Team at Commvault, gaining experience with file systems (Windows, Unix) and cloud platforms. Skills applied include Python, Selenium, batch scripting, AWS, Azure, and Software Testing."
+    ]
+  },
+  {
+    "role": "Data Science Intern",
+    "company": "Highradius Technologies",
+    "period": "Jun 2021 – Oct 2021",
+    "location": "Remote · India",
+    "bullets": [
+      "Built and deployed machine learning models in Python using NumPy, Pandas, and scikit-learn to forecast deduction validity across three client projects.",
+      "Trained and optimized models for production deployment and handled post-deployment monitoring and issue resolution in customer environments.",
+      "Performed data analysis and feature engineering to identify trends and improve model performance, including detailed Excel-based analysis.",
+      "Collaborated with clients to understand pain points and enhanced Java backend components to support seamless integration of machine learning workflows."
+    ]
+  }
+]

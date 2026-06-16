@@ -1,0 +1,30 @@
+[
+  {
+    "category": "Languages",
+    "skills": ["Python", "Java", "Groovy", "SQL", "PowerShell", "JavaScript"]
+  },
+  {
+    "category": "Testing & QA",
+    "skills": ["Selenium", "JUnit", "Spock", "Postman", "API Testing", "Integration Testing", "Regression Testing", "Performance Testing", "Test Case Design", "Root-Cause Analysis", "Log Analysis"]
+  },
+  {
+    "category": "CI/CD & Tools",
+    "skills": ["Git", "GitHub Actions", "JIRA", "Datadog", "Docker", "Studio 3T"]
+  },
+  {
+    "category": "Cloud & Systems",
+    "skills": ["AWS", "Azure", "Google Cloud", "VMware ESXi", "Microsoft Hyper-V", "File Systems", "Distributed Systems"]
+  },
+  {
+    "category": "Databases",
+    "skills": ["PostgreSQL", "MongoDB", "Redis", "ChromaDB", "Firestore", "Microsoft SQL Server", "NoSQL"]
+  },
+  {
+    "category": "Backend & Frameworks",
+    "skills": ["Spring Boot", "FastAPI", "Flask", "Streamlit", "React", "LangChain", "LangGraph"]
+  },
+  {
+    "category": "AI & ML",
+    "skills": ["PyTorch", "OpenAI", "HuggingFace", "RAG", "LLMs", "Tool-Calling", "Agentic AI"]
+  }
+]
