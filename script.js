@@ -5,6 +5,7 @@ const ctx    = canvas.getContext('2d');
 const stage  = document.getElementById('stage');
 
 const BUG_DEFS = [
+  { label: 'About',           color: '#000000', sectionId: 'about'    },
   { label: 'Work Experience', color: '#000000', sectionId: 'work'     },
   { label: 'Projects',        color: '#000000', sectionId: 'projects'  },
   { label: 'Academic Experience',   color: '#000000', sectionId: 'academic'  },
@@ -335,9 +336,14 @@ navMobile.querySelectorAll('.nav-mobile-link').forEach(link => {
 
 /* ── SCROLL-TO-TOP SPIDER ───────────────────────────────────────── */
 
-const scrollBtn = document.getElementById('scroll-top');
+const scrollBtn  = document.getElementById('scroll-top');
+const aboutStage = document.getElementById('about');
 scrollBtn.addEventListener('click', () => stage.scrollIntoView({ behavior: 'smooth' }));
 
-new IntersectionObserver(([e]) => {
-  scrollBtn.classList.toggle('visible', !e.isIntersecting);
-}).observe(stage);
+function updateScrollBtn() {
+  const top = aboutStage.getBoundingClientRect().top;
+  scrollBtn.classList.toggle('visible', top < window.innerHeight);
+  requestAnimationFrame(updateScrollBtn);
+}
+requestAnimationFrame(updateScrollBtn);
+updateScrollBtn();

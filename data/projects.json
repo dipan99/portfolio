@@ -1,5 +1,11 @@
 [
   {
+    "badge": "On-Device AI · macOS · SwiftUI",
+    "title": "DeskPilot — Local-First macOS Productivity Assistant",
+    "description": "Native macOS productivity hub with an on-device AI assistant that calls deterministic app tools for notes, calendar, reminders, and recent files. Local MLX-LM server (Qwen3-4B) provides an OpenAI-compatible chat backend with deterministic fallback when offline. Hybrid lexical + semantic-style retrieval powers Notes search; EventKit integration drives Calendar and Tasks. Full unit and UI test coverage via XCTest/XCUITest with a custom test runner.",
+    "stack": "Swift, SwiftUI, EventKit, Python, MLX-LM, XCTest, XCUITest"
+  },
+  {
     "badge": "On-Device AI · iOS/macOS · Hackathon",
     "title": "Sirius — Private On-Device Health AI",
     "description": "Won Best Security Infrastructure at the O1 Summit Hackathon ($1K). A fully private AI health assistant — LLM inference, speech recognition, health memory, and device sync all run locally on Apple Silicon. Built the macOS app end to end in SwiftUI with a FastAPI backend running Gemma 4 via MLX. P2P device sync over Bluetooth/Wi-Fi with AES-256-GCM encrypted health memory.",
