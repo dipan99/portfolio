@@ -334,6 +334,22 @@ navMobile.querySelectorAll('.nav-mobile-link').forEach(link => {
   });
 });
 
+/* ── ABOUT TABS ─────────────────────────────────────────────────── */
+
+document.querySelectorAll('.about-tab').forEach(tab => {
+  tab.addEventListener('click', () => {
+    document.querySelectorAll('.about-tab').forEach(t => {
+      t.classList.remove('active');
+      t.setAttribute('aria-selected', 'false');
+    });
+    document.querySelectorAll('.about-panel').forEach(p => p.classList.remove('active'));
+
+    tab.classList.add('active');
+    tab.setAttribute('aria-selected', 'true');
+    document.querySelector(`.about-panel[data-panel="${tab.dataset.tab}"]`).classList.add('active');
+  });
+});
+
 /* ── SCROLL-TO-TOP SPIDER ───────────────────────────────────────── */
 
 const scrollBtn  = document.getElementById('scroll-top');
